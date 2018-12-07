@@ -1,0 +1,37 @@
+{
+  "name": "sick-fits-backend",
+  "version": "1.0.0",
+  "description": "the backend of sick fits",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x node src/index.js",
+    "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
+    "test": "jest",
+    "deploy": "prisma deploy --env-file variables.env"
+  },
+  "dependencies": {
+    "apollo": "^2.1.7",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "2.4.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "6.2.0",
+    "graphql": "^14.0.2",
+    "graphql-cli": "^2.17.0",
+    "graphql-yoga": "1.16.7",
+    "jsonwebtoken": "8.4.0",
+    "nodemailer": "^4.6.8",
+    "nodemon": "^1.18.7",
+    "npm-run-all": "^4.1.5",
+    "prisma": "^1.22.1",
+    "prisma-binding": "2.2.8",
+    "stripe": "^6.12.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "wesbos.com"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
