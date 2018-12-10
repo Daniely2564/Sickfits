@@ -1,11 +1,11 @@
 import Items from '../components/Items';
-const Home = () => {
+const Home = (props) => {
     return (
         <React.Fragment>
             <div>
                 Home
             </div>
-            <Items />
+            <Items page={parseInt(props.query.page)} />
         </React.Fragment>
     )
 }

@@ -60,7 +60,9 @@ export default class CreateItem extends Component {
     }
     render() {
         return (
-            <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
+            <Mutation
+                // refetchQueries={} makes you refetch certain queries. 
+                mutation={CREATE_ITEM_MUTATION} variables={this.state}>
                 {(createItem, { loading, error, called, data }) => (
 
                     <Form onSubmit={async (e) => {
