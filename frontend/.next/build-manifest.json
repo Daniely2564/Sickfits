@@ -11,11 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/items": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/items": [
+    "/signup": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
